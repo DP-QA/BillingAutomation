@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false" verbose="2">
+  <listeners>
+<listener class-name="com.scmp.Core.Listeners"></listener>
+</listeners>
+  <test name="Test On Chrome">
+  <parameter name="Browser" value="chrome"></parameter>
+  <parameter name="BaseUrl" value="https://www.scmp.com/user/login?destination=frontpage/hk"></parameter>
+    <classes>
+      <class name="com.scmp.TestCase.LoginTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

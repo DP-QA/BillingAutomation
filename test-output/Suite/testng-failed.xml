@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [Suite]">
+  <parameter name="BaseUrl" value="https://www.scmp.com/user/login?destination=frontpage/hk"/>
+  <parameter name="Browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.scmp.Core.Listeners"/>
+  </listeners>
+  <test name="Test On Chrome(failed)">
+    <parameter name="BaseUrl" value="https://www.scmp.com/user/login?destination=frontpage/hk"/>
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.scmp.TestCase.LoginTestCase">
+        <methods>
+          <include name="VerifyInvalidLogin"/>
+          <include name="openBrowser"/>
+          <include name="VerifyValidLogin"/>
+        </methods>
+      </class> <!-- com.scmp.TestCase.LoginTestCase -->
+    </classes>
+  </test> <!-- Test On Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
